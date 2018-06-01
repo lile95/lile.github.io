@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			@keyframes name{
+				0{
+					transform: scale(0) rotate(0) ;
+					
+				}
+				25%{
+					transform: scale(.5) rotate(180deg);
+					-opacity: 0.5;
+				}
+				50%{
+					transform: scale(1) rotate(360deg ) ;
+					opacity: 1;
+				}
+				75%{
+					transform: scale(.5) rotate(540deg) ;
+					opacity: 1;
+				}
+				100%{
+					transform: scale(1) rotate(720deg);
+					opacity: 1;
+				}
+			}
+			@keyframes tp{
+				0%{
+					transform: scale(1) rotate(0);
+				}
+				25%{
+					transform: scale(1) rotate(180deg);
+				}
+				50%{
+					transform: scale(1) rotate(360deg);
+				}
+				75%{
+					transform: scale(1) rotate(540deg);
+				}
+				100%{
+					transform: scale(1) rotate(720deg);
+				}
+			}
+			body{
+				position: relative;
+			}
+			.box{
+				width: 300px;
+				height: 300px;
+				-border: solid 1px #000;
+				border-radius: 50%;
+				background: url(img/ul1316-3926.jpg);
+				background-size: 100% 100%;
+				margin:400px auto ;
+				-position: absolute;
+				animation: tp .3s linear infinite;
+				-transition: 0.9s;
+				
+				
+			}
+			.box img{
+				width: 100%;
+				height: 100%;
+			}
+			.box:hover .box{
+				
+			}
+			.box1{
+				width: 300px;
+				height: 50px;
+				
+			}
+			.left{
+				float: left;
+				background: red;
+				height: 50px;
+				width: 50px;
+			}
+			.right{
+				float: right;
+				background: yellow;
+				height: 50px;
+				width: 50px;
+			}
+			.border{
+				border-top: 10px solid red;
+				
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				margin: 400px auto;
+				animation: name 3s linear infinite;
+				/*transform-origin: left center;*/
+				
+			}
+			.in{
+				border-right: 10px solid yellow;
+				
+				width: 180px;
+				height: 180px;
+				border-radius: 50%;
+				animation: name 3s linear infinite;
+				transform: left center;
+				padding: 10px;
+			}
+			.in2{
+				border-bottom: 10px solid green;
+				
+				width: 160px;
+				height: 160px;
+				border-radius: 50%;
+				animation: name 3s linear infinite;
+				transform: left center;
+				padding: 10px;
+			}
+			.in3{
+				border-left: 10px solid #000000;
+				
+				width:140px;
+				height:140px;
+				border-radius: 50%;
+				animation: name 3s linear infinite;
+				transform: left center;
+				padding: 10px;
+			}
+			.in4{
+				border-top: 10px solid tomato;
+				
+				width:120px;
+				height:120px;
+				border-radius: 50%;
+				-background: radial-gradient(red,green,yellow);
+				animation: name 3s linear infinite;
+				transform: left center;
+				padding: 10px;
+			}
+			.img{
+				height: 102px;
+				width: 198px;
+				margin: auto;
+				-animation: tp 2s linear infinite;
+			}
+			div:hover div{
+				-animation-play-state: paused;
+			}
+		</style>
+	</head>
+	<body>
+				<div class="box">
+					<!--<img src="img/ul1316-3926.jpg"/>-->
+				</div>
+
+		<div class="border">
+			<div class="in">
+				<div class="in2">
+					<div class="in3">
+						<div class="in4">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="img">
+			
+		</div>
+		<!--
+        	transform:
+        		scale:缩放
+        		rotate（ deg）：旋转
+        		transform-origin:设置运动的基点
+        		translate:位移
+        		skew:斜切
+        		
+        		
+        	perspective:景深	
+        	    		
+        	transform特点
+    	    		1.不会脱离文档流
+    	    		2.transform会提升层级
+    	   	transform-style: 
+    	   	preserve-3d;3D
+        -->
+	</body>
+</html>
