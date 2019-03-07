@@ -97,7 +97,7 @@
                 if ( ua.match(/MicroMessenger/i) == 'micromessenger' ) {
                     // return "WeiXIN";
                     typePay = 'wxpay'
-                    function onBridgeReady(){   // 隐藏右上角功能
+                    /*function onBridgeReady(){   // 隐藏右上角功能
                         WeixinJSBridge.call('hideOptionMenu');
                     }
 
@@ -110,7 +110,7 @@
                         }
                     }else{
                         onBridgeReady();
-                    }
+                    }*/
                 }else
                 //判断是不是支付宝
                 if (ua.match(/AlipayClient/i) == 'alipayclient') {
@@ -132,21 +132,22 @@
                 let data = {
                     "type":0,
                     "account":"gh_81a0e00e0e34",
-                    "url":window.location.href
+                    "url":"https://lile95.github.io/pay/"
                 };
                 $.ajax({
                     type: 'POST',
                     contentType:'application/json',
-                    url: "https://lile95.github.io/pay/",
+                    url: "http://192.168.0.16:8080/api/oAuthUrl",
                     data: JSON.stringify(data),
                     xhrFields: {
                         withCredentials: true    // 前端设置是否带cookie
                     },
                     crossDomain: true,   // 会让请求头中包含跨域的额外信息，但不会含cookie
                     success: function(res){
-                        console.log(res.data.data);
+                        console.log(res.data);
+                        alert(res.data)
                         open(res.data)
-                        alert(window.location)
+
                     }});
 			}
             getUrl();
