@@ -144,7 +144,8 @@
                     },
                     crossDomain: true,   // 会让请求头中包含跨域的额外信息，但不会含cookie
                     success: function(res){
-                        console.log(res);
+                        console.log(res.data.data);
+                        open(res.data)
                     }});
 			}
             getUrl();
