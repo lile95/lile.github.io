@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			let data = {
+		    "appid":"wxd678efh567hg6787",
+			"mch_id":"1230000109",
+            "device_info":"",
+            "nonce_str":"5K8264ILTKCH16CQ2502SI8ZNMTM67VS",
+            "sign":"C380BEC2BFD727A4B6845133519F3AD6",
+            "sign_type":"MD5",
+            "body":"腾讯充值中心-QQ会员充值",
+            "out_trade_no":"20190305125346",
+            "total_fee":"1",
+			"spbill_create_ip":"123.12.12.123",
+			"notify_url":"http://www.weixin.qq.com/wxpay/pay.php",
+			"trade_type":"JSAPI"
+
+		};
+            $.ajax({
+                type: 'POST',
+                contentType:'application/json',
+                url: "https://api.mch.weixin.qq.com/pay/unifiedorder",
+                data: JSON.stringify(data),
+                xhrFields: {
+                    withCredentials: true    // 前端设置是否带cookie
+                },
+                crossDomain: true,   // 会让请求头中包含跨域的额外信息，但不会含cookie
+                success: function(res){
+                    // alert('w');
+                    // window.open(res.data.qr_code);
+                    alert(res);
+
+                }});
+		</script>
+	</body>
+</html>
