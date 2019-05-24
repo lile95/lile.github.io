@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="user-scalable=no">
+    <meta name="x5-page-mode" content="app"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="-webkit-linear-gradient( right,#40a1ff,#29c4fc)"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <title>统一收款</title>
+    <script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/test.css">
+    <script src="js/vconsole.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        // 初始化
+        let vConsole = new VConsole();
+        (function (doc, win) {
+            const docEl = doc.documentElement,
+                resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+                recalc = function () {
+                    const clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 750) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body>
+<div id="jx_pay" >
+    <div class="content">
+        <div id="head" style="padding-top: 0.61rem;"></div>
+        <div id="pos" >
+            <div class="shop_row">
+                <div class="svg_parent" >
+                    <div class="logo" style=" background-repeat: no-repeat; background-image: url(svg/shop1.svg); background-size: 100% 100%;"></div>
+                </div>
+                <div class="shop_name">
+                    <h2> <span class="left_name" id="shopName"></span> <!--<span class="right_name">添加备注</span>--></h2>
+                    <div class="store">
+                        <div class="flex-1">
+                            <span class="store_name">桌名</span>
+                            <span class="store_content tablesName"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--获取 收款码的 金额-->
+            <div class="import_box">
+                <div class="flex tables">
+
+                </div>
+                <div class="flex"  id="people">
+                    <span class="flex-1"><span  id="orderNum" style="text-align: right"></span></span>
+                    <div class="flex-1" style="text-align: right" ><!--<span>人数：</span> <span ></span>--></div>
+                </div>
+                <div class="flex" id="createTime">
+                    <!--<div class="flex-1 "><span>时间：</span> <span ></span></div>-->
+                    <!--<div class="text-r" ><span>优惠：￥<span id="discounts"></span></span> </div>-->
+                </div>
+                <div style="padding: 0 45px;">
+                    <!--<hr class="borderTop">-->
+                </div>
+
+                <div class="flex " id="menuFee">
+
+                </div>
+                <div class="flex " id="serviceCharge">
+
+                </div>
+                <div class="flex " id="zero">
+                    <div class="flex-1" ><span></span> </div>
+                    <!--<div class="text-1" > <span></span></div>-->
+                </div>
+
+                <div class="flex " id="discounts">
+                    <!--  <div class="flex-1 "><span id="discountRate"></span> </div>
+                      <div class="text-1" ><span ></span> </div>-->
+                </div>
+                <div class="flex " id="discountRate">
+
+                </div>
+                <div class="import_content " >
+                    <span class="money">合计金额</span>
+                    <div class="inputs">
+                        <span class="rnb"></span>
+                        <span id="money" class="import_pay"></span>
+                        <!--<i class="cursor"></i>-->
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--订单详情-->
+            <div class="toggle-choice " >
+                <div id="toggle-head"><strong style="padding-left: 0.34rem;color: #6fafff;">订单详情</strong> <span class="iconfont">&#xe72f;</span></div>
+                <div style="max-height: 600px;overflow: scroll" class="scroll" >
+                    <div class="flex" style="padding-top: 0.15rem">
+                        <span class="flex-2">商品</span>
+                        <span class="flex-1">数量</span>
+                        <span class="flex-1">单位</span>
+                        <span class="flex-1">金额</span>
+                    </div>
+                    <ul class="toggle-menu"></ul>
+                </div>
+            </div>
+            <!--支付提交-->
+            <div id="buttons">
+                <button class="pos-button" id="pos-but">付款</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="js/Dialog.js"></script>
+<script src="js/pos.js"></script>
+</body>
+</html>

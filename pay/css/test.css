@@ -1,0 +1,322 @@
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body,
+html,
+p,
+h2,
+ul {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: #f3f3f3;
+}
+li {
+  list-style: none;
+}
+/*.scroll{
+    position:relative;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+}*/
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1088175 */
+  src: url('//at.alicdn.com/t/font_1088175_xkda64t8rbe.eot');
+  src: url('//at.alicdn.com/t/font_1088175_xkda64t8rbe.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_1088175_xkda64t8rbe.woff2') format('woff2'), url('//at.alicdn.com/t/font_1088175_xkda64t8rbe.woff') format('woff'), url('//at.alicdn.com/t/font_1088175_xkda64t8rbe.ttf') format('truetype'), url('//at.alicdn.com/t/font_1088175_xkda64t8rbe.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 0.27692308rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.03846154rem;
+  -moz-osx-font-smoothing: grayscale;
+}
+#jx_pay header {
+  background: -webkit-linear-gradient(right, #40a1ff, #29c4fc);
+  height: 1.07692308rem;
+  line-height: 1.07692308rem;
+  text-indent: 0.18461538rem;
+  padding: 0 1.53846154rem;
+  box-sizing: border-box;
+  position: relative;
+}
+#jx_pay header .back_border {
+  display: inline-block;
+  width: 0.23076923rem;
+  height: 0.23076923rem;
+  border: 0.03846154rem solid #ffffff;
+  border-right: none;
+  border-top: none;
+  transform: rotate(45deg);
+}
+#jx_pay header .title {
+  display: inline-block;
+  font-size: 0.30769231rem;
+  text-indent: 0;
+  color: #fff;
+}
+#jx_pay header .left_head {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.title_content {
+  font-size: 0.33846154rem;
+  color: #fff;
+  text-align: center;
+}
+.logo {
+  width: 1.11538462rem;
+  height: 1.11538462rem;
+  background: #d8bd88;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.svg_parent {
+  display: inline-block;
+  line-height: 1.11538462rem;
+  text-align: center;
+}
+.shop_row {
+  padding: 0.52307692rem 0.34615385rem 0 0.34615385rem;
+  display: flex;
+}
+.shop_name {
+  display: inline-block;
+  width: 100%;
+  padding-left: 0.23076923rem;
+  overflow: hidden;
+}
+.shop_name h2 {
+  display: flex;
+  width: 100%;
+  height: 0.56923077rem;
+  line-height: 0.56923077rem;
+}
+.shop_name .left_name {
+  font-size: 0.27692308rem;
+  color: #333;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.shop_name .right_name {
+  font-size: 0.26153846rem;
+  color: #d9b15a;
+  flex: 1;
+  text-align: right;
+}
+.store {
+  padding-top: 0.11538462rem;
+  line-height: 0.26153846rem;
+}
+.store .store_name {
+  padding: 0.03846154rem 0.07692308rem;
+  background: #d5d5d5;
+  color: #fff;
+  font-size: 0.18461538rem;
+}
+.store .store_content {
+  font-size: 0.26153846rem;
+  color: #878787;
+  padding-left: 0.15384615rem;
+}
+.import_box {
+  padding: 0.53846154rem 0.34615385rem 0.15384615rem;
+  /*height: 174/@a;*/
+}
+.cursor {
+  display: inline-block;
+  border-right: 0.03846154rem solid #3366cc;
+  height: 0.53846154rem;
+  vertical-align: middle;
+  /*transition: width .5s;*/
+  animation: myfirst 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes myfirst {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.import_box .import_content {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  /*border-radius: 25/@a;*/
+  line-height: 1.33846154rem;
+  padding: 0 0.34615385rem;
+  box-sizing: border-box;
+  display: flex;
+}
+.money {
+  font-size: 0.30769231rem;
+  color: #898989;
+  flex: 1;
+}
+.inputs {
+  flex: 2;
+  text-align: right;
+}
+.inputs .rnb {
+  font-size: 0.34615385rem;
+  color: #040404;
+  display: inline-block;
+  vertical-align: middle;
+}
+.inputs .import_pay {
+  pointer-events: none;
+  font-size: 0.49230769rem;
+  color: #040404;
+  display: inline-block;
+  /*width: 100%;*/
+  height: 100%;
+  padding: 0;
+  vertical-align: middle;
+  text-align: right;
+  border: none;
+  outline: none;
+}
+.key_row {
+  display: flex;
+  height: 1.38461538rem;
+  line-height: 1.38461538rem;
+  text-align: center;
+  font-size: 0.53846154rem;
+  background: #fff;
+}
+.key_row span,a {
+  flex: 1;
+  cursor: pointer;
+  border-top: 0.02307692rem solid #d2d2d2;
+  border-right: 0.02307692rem solid #d2d2d2;
+}
+.key_row .right_border {
+  border-right: none;
+}
+#jx_pay,
+.content {
+  height: 100%;
+  position: relative;
+}
+.key {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.separate {
+  display: flex;
+}
+.right_separate {
+  flex: 3;
+}
+.left_separate {
+  flex: 1;
+  background: #2fbbf6;
+  font-size: 0.53846154rem;
+  color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: Center;
+}
+.left_separate .notarize {
+  vertical-align: middle;
+  padding: 0 0.38461538rem;
+}
+.delete {
+  width: 0.53846154rem;
+  height: 0.53846154rem;
+  display: inline-block;
+}
+/*pos*/
+#pos {
+  background: #FFF;
+  margin: 0 0.30769231rem;
+}
+#buttons {
+  padding: 0 0.53846154rem 0.53846154rem 0.53846154rem;
+}
+#buttons .pos-button {
+  font-size: 0.34615385rem;
+  width: 100%;
+  height: 0.92307692rem;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 0.00769231rem solid #67c23a;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: 0.1s;
+  font-weight: 500;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  padding: 0.09230769rem 0.15384615rem;
+  border-radius: 0.03076923rem;
+  color: #fff;
+  background-color: #909399;
+}
+.flex {
+  display: flex;
+  font-size: 0.27692308rem;
+  color: #333;
+  padding: 0 0.34615385rem;
+  line-height: 0.46153846rem;
+}
+.flex .flex-1 {
+  flex: 1;
+}
+.flex .flex-2 {
+  flex: 2;
+}
+.flex .text-r {
+  text-align: right;
+}
+.toggle-choice {
+  padding: 0 0.34615385rem 0.30769231rem;
+}
+.toggle-menu li {
+  display: flex;
+  font-size: 0.27692308rem;
+  color: #333;
+  padding: 0.15384615rem 0.34615385rem 0;
+}
+.toggle-menu li span {
+  flex: 1;
+}
+#tablesId {
+  font-weight: 600;
+}
+.toggle-menu li span:nth-child(1) {
+  flex: 2;
+}
+.borderTop {
+  border-top: 0.00769231rem solid #999;
+}
+.toggle-choice {
+  font-size: 0.27692308rem;
+}
