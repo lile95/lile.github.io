@@ -47,12 +47,12 @@ Syntax highlighted code block
 -用数组方法操作数组
 触发视图更新
 这些方法如下：
-`push`()
+`push()
 pop()
 shift()
 unshift()
 splice()
 sort()
-reverse()
+reverse()`
 
 ```
