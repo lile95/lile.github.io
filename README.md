@@ -21,17 +21,7 @@ Syntax highlighted code block
 1. Numbered
 2. List
 
-### vue更新数据页面不渲染
-- 用数组方法操作数组
-触发视图更新
-这些方法如下：
-push()
-pop()
-shift()
-unshift()
-splice()
-sort()
-reverse()
+
 
 **Bold** and _Italic_ and `Code` text
 
@@ -50,4 +40,16 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 [link](/trans.html)
 
 
+```markdown
 
+### vue更新数据页面不渲染
+用数组方法操作数组
+触发视图更新
+这些方法如下：
+`push`()
+`pop`()
+`shift`()
+`unshift`()
+`splice`()
+`sort`()
+`reverse`()
