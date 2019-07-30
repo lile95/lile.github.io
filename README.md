@@ -21,6 +21,18 @@ Syntax highlighted code block
 1. Numbered
 2. List
 
+### vue更新数据页面不渲染
+- 用数组方法操作数组
+触发视图更新
+这些方法如下：
+push()
+pop()
+shift()
+unshift()
+splice()
+sort()
+reverse()
+
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
@@ -36,3 +48,6 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 [link](/trans.html)
+
+
+
