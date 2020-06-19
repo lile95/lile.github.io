@@ -42,16 +42,5 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 ```markdown
 Syntax highlighted code block
-
-### vue更新数据页面不渲染
-#### 用数组方法操作数组,触发视图更新
-[这些方法如下：]
-`push()
-pop()
-shift()
-unshift()
-splice()
-sort()
-reverse()
-
-```
+防止弹窗下页面滚动 开启弹窗时在需要消除滚动的地方加上 //filter: blur(5px);
+    取消弹窗时去掉该样式
