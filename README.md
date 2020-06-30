@@ -42,6 +42,6 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 ```markdown
 
-### 防止弹窗下页面滚动 开启弹窗时在需要消除滚动的地方加上 `filter: blur(5px)`;
-###    取消弹窗时去掉该样式
+ 防止弹窗下页面滚动 开启弹窗时在需要消除滚动的地方加上 `filter: blur(5px)`;
+   取消弹窗时去掉该样式
 ```
