@@ -1,0 +1,609 @@
+.blur{
+	filter: blur(5px);
+}	
+/deep/.my-img{
+		width: 216rpx;
+		height: 166rpx !important;
+	}
+/deep/ .error-img{
+	width: 216rpx !important;
+	height: 166rpx !important;
+}
+
+.menuList{
+	background-color: rgb(247, 247, 247);
+	-webkit-overflow-scrolling: touch;
+	.content{
+		padding: 20rpx 0 0 0;
+		// position: relative;
+		background-color: #FFFFFF;
+	}
+}
+.head-top{
+	padding-left: 24rpx;
+	margin-bottom: 20rpx;
+	padding-right: 24rpx;
+}
+.current{
+	background-color: #fff;
+	opacity: 1 !important;
+	font-weight: bold;
+}
+.food{
+	display: flex;
+	// position: absolute;
+	height: calc(~'100vh - 88rpx');
+	top: 340rpx;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+	.food-type{
+		flex: 0 0 160rpx;
+		width: 160rpx;
+		padding-bottom: 120rpx;
+		box-sizing: border-box;
+		background-color: rgb(247, 247, 247);
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+		.food-type-itme{
+			padding-left: 24rpx;
+			height: 93rpx;
+			color: #333;
+			display: table;
+			position: relative;
+			text{
+				display: table-cell;
+				line-height: 33rpx;
+				font-size: 24rpx;
+				width: 136rpx;
+				vertical-align: middle;
+			}
+		}
+	}
+	.price{
+		font-size: 34rpx;
+	}
+	.name{
+		font-size: 30rpx !important;
+	}
+	.food-content{
+		background-color: #FFFFFF;
+		flex: 1;
+		width: 546rpx;
+		-webkit-overflow-scrolling: touch;
+		// padding-top: 30rpx;
+		padding-left: 20rpx;
+		padding-right: 20rpx;
+		padding-bottom: 120rpx;
+		overflow: scroll;
+		.type-name{
+			font-size: 26rpx;
+			color: #332F2E;
+			height: 92rpx;
+			line-height: 92rpx;
+		}
+		.item{
+			position: relative;
+			.title{
+				background-color: #fff;
+				position: sticky;
+				top: 0;
+				z-index: 19;
+			}
+		}
+	}
+}
+.shopInfo{
+	display: flex;
+	position: relative;
+	background: #FFFFFF;
+	box-shadow: 10rpx 10rpx 20rpx 0 rgba(0,0,0,0.05);
+	border-radius: 8rpx;
+	padding: 20rpx 0 30rpx 18rpx  ;
+	.logBox{
+		width: 126rpx;
+		height: 126rpx;
+		background: #FFFFFF;
+		border: 1rpx solid #EEEEEE;
+		border-radius: 8rpx;
+		image{
+			width: 126rpx;
+			height: 126rpx;
+		}
+	}
+	.tag{
+		background-image: linear-gradient(90deg, #FB5F00 0%, #F63100 100%);
+		color: #FFFFFF;
+		font-size: 20rpx;
+		text-align: center;
+		border-radius: 100rpx 0 0 100rpx;
+		border-radius: 100rpx 0px 0px 100rpx;
+		width: 80rpx;
+		height: 28rpx;
+		line-height: 28rpx;
+		position: absolute;
+		top: 27rpx;
+		right: 0;
+	}
+	.shopText{
+		padding-left: 20rpx;
+		.shopName{
+			font-size: 30rpx;
+			line-height: 42rpx;
+			font-weight: bold;
+			color: #332F2E;
+		}
+		.font-mini{
+			opacity: 0.8;
+			font-size: 24rpx;
+			color: #332F2E;
+		}
+		.sendOrder{
+			display: flex;
+			line-height: 38rpx;
+			flex-wrap: wrap;
+			.item{
+				padding-right: 20rpx;
+			}
+			.sendType{
+				background: #F6DC5C;
+				border-radius: 8rpx 8rpx 8rpx 0;
+				padding: 3rpx 8rpx;
+				font-size: 20rpx;
+			}
+		}
+		.full-tag{
+			display: inline-block;
+			padding: 4rpx 6rpx;
+			line-height: 28rpx;
+			margin-right: 10rpx;
+			background: #F63100;
+			color: #FFFFFF;
+			border-radius: 4rpx;
+			font-size: 20rpx;
+		}
+	}
+	
+}
+.eatIn{
+	display: flex;
+	justify-content: space-between;
+	.icon{
+		width: 32rpx;
+		height: 32rpx;
+		vertical-align: middle;
+		padding-right: 10rpx;
+		padding-bottom: 6rpx;
+	}
+	.search-menu{
+		width: 340rpx;
+		height: 88rpx;
+		line-height: 88rpx;
+		background-color: #F67100;
+		margin-right: 20rpx;
+		font-size: 28rpx;
+		
+	}
+	.my-order{
+		width: 340rpx;
+		height: 88rpx;
+		line-height: 88rpx;
+		background-color: #F63100;
+		font-size: 28rpx;
+	}
+}
+/deep/ .menuList .uni-custom{
+	padding-bottom: 60rpx;
+}
+/deep/ .uni-popup__wrapper-box{
+	padding: 0 0 60rpx !important;
+	max-height: 90vh !important;
+	-webkit-overflow-scrolling: touch;
+}
+.popup-menu{
+	overflow: hidden;
+	.max-image{
+		border-radius: 8rpx 8rpx 0 0;
+		overflow: hidden;
+		padding-top:440rpx;
+		image{
+			width: 100%;
+			height: 440rpx;
+			border-radius: 8rpx 8rpx 0 0;
+			position: absolute;
+			top: 0;
+		}
+	}
+	.menu-remark-content{
+		max-height: calc(~'90vh - 600rpx');
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+		min-height: 600rpx;
+		padding-bottom: 80rpx;
+	}
+	.menu-unit{
+		display: flex;
+		padding: 10rpx 24rpx;
+		.unit{
+			margin-right: 20rpx;
+			text-align: center;
+			border: 1rpx solid #EEEEEE;
+			font-size: 26rpx;
+			height: 56rpx;
+			line-height: 56rpx;
+			min-width: 140rpx;
+			padding: 0 10rpx;
+			border-radius: 28rpx;
+		}
+		.check{
+			background: rgba(246,49,0,0.05);
+			color: #F63100;
+			border: 1rpx solid #F63100;
+		}
+	}
+	.popup-text{
+		padding: 30rpx 24rpx 0;
+		background-color: #FFFFFF;
+		z-index: 10;
+		position: sticky;
+		top: 0;
+		.describe{
+			display: flex;
+			justify-content: space-between;
+			.text{
+				opacity: 0.6;
+				font-size: 24rpx;
+				color: #332F2E;
+			}
+		}
+		.line{
+			border-bottom: 1rpx #eee solid;
+			padding-top: 30rpx;
+		}
+	}
+	.menu-name{
+		padding: 0 0 10rpx;
+		font-weight: bold;
+		font-size: 38rpx;
+		color: #332F2E;
+	}
+}
+.remark{
+	padding: 0 24rpx 0;
+	.typeName{
+		font-size: 26rpx;
+		font-weight: bold;
+		padding: 30rpx 0;
+	}
+	.note-row{
+		display: flex;
+		flex-wrap: wrap;
+		.check{
+			background: rgba(246,49,0,0.05);
+			color: #F63100;
+			border: 1rpx solid #F63100;
+		}
+	}
+	
+	.remark-item{
+		background: #FAFAFA;
+		border: 1rpx solid #EEEEEE;
+		border-radius: 28rpx;
+		opacity: 0.6;
+		font-size: 26rpx;
+		height: 56rpx;
+		line-height: 56rpx;
+		min-width: 140rpx;
+		padding: 0 10rpx;
+		text-align: center;
+		margin: 0 22rpx 24rpx 0;
+	}
+}
+.corner{
+	background: #F63100;
+	border-radius: 15rpx;
+	color: #FFFFFF;
+	height: 30rpx;
+	line-height: 30rpx;
+	min-width: 30rpx;
+	padding: 0 10rpx;
+	box-sizing: border-box;
+	font-size: 20rpx;
+	text-align: center;
+	position: absolute;
+	top: 10rpx;
+	right: 0;
+}
+.menuview{
+	position: relative;
+}
+.menutab{
+	position: sticky;
+	background-color: #FFFFFF;
+	top: 0;
+	z-index: 102;
+	display: flex;
+	height: 88rpx;
+	line-height: 88rpx;
+	padding: 0 24rpx ;
+	.tablitem{
+		text-align: center;
+		// margin-right: 80rpx;
+		flex: 1;
+		z-index: 2;
+		.shop-tab{
+			display: inline-block;
+			font-size: 30rpx;
+			color: #333333;
+			height: 84rpx;
+			vertical-align: top;
+			width: 60rpx;
+		}
+	}
+	.check{
+		border-bottom: 2px solid #F63100;
+		color: #F63100 !important;
+	}
+}
+.order-list{
+	padding: 20rpx 24rpx;
+	background-color: rgb(247, 247, 247);
+}
+.price{
+	// font-size: 24rpx;
+	// font-weight: bold;
+	color: #F63100;
+	line-height: 44rpx;
+	// padding-left: 20rpx;
+}
+
+.merchantInfo{
+	padding: 30rpx 24rpx;
+	background-color: rgb(247, 247, 247);
+	.title{
+		font-size: 28rpx;
+	}
+	.item{
+		padding: 20rpx;
+		margin-bottom: 20rpx;
+		background-color: #FFFFFF;
+		.ul{
+			font-size: 24rpx;
+			.li{
+				padding-left: 20rpx;
+				height: 80rpx;
+				display: flex;
+				line-height: 80rpx;
+				border-bottom: 1rpx solid #eee;
+				.lil{
+					width: 100rpx;
+				}
+				.lir{
+					flex: 1;
+					text-align: right;
+					text{
+						padding-right: 10rpx;
+					}
+				}
+			}
+		}
+	}
+	.flex{
+		display: flex;
+	}
+}
+.send-out{
+	padding-left: 20rpx;
+	.text{
+		font-size: 24rpx;
+		display: block;
+		padding: 4rpx 20rpx 4rpx 0;
+	}
+	
+}
+.recommend-m{
+	padding-bottom: 54rpx;
+	.recommend-title{
+		padding-left: 24rpx;
+	}
+}
+.recoms{
+	padding-left: 24rpx;
+	padding-right: 24rpx;
+	padding-bottom: 30rpx;
+	// overflow: scroll;
+	// display: flex;
+}
+
+
+///菜品增加按钮
+.cartcontrol{
+	flex: 1;
+	.content{
+		line-height: 44rpx;
+		min-width: 120rpx;
+		display: flex;
+		justify-content: flex-end;
+	}
+	.uni-icon{
+		font-size: 36rpx !important;
+		vertical-align: top;
+		-webkit-background-clip: text !important;
+		background-image: linear-gradient(90deg, #FB5F00 0%, #F63100 100%);
+		// color: #fff !important;
+		color: transparent !important;
+	}
+	.sub{
+		background-image: url(../../static/image/orderImage/subicon.png);
+		background-size: 100% 100%;
+		padding: 1rpx;
+	}
+	.addicon{
+		background-image: url(../../static/image/orderImage/addicon.png);
+		background-size: 100% 100%;
+	}
+	.waste{
+		background-image: url(../../static/image/orderImage/addiconwaste.png);
+		background-size: 100% 100%;
+	}
+	button{
+		width: 44rpx;
+		height: 44rpx;
+		// font-size: 36rpx;
+		border-radius: 50%;
+		line-height: 44rpx;
+		text-align: center;
+		margin: 0;
+		background-color: #FFFFFF;
+		padding: 2rpx !important;
+		border: none;
+	}
+	
+	
+} 
+.menu-info .num{
+	font-size: 28rpx;
+	vertical-align: top;
+	padding: 0 8rpx;
+}
+//item 菜品
+.menuItem{
+	padding-top: 30rpx;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-wrap: wrap;
+	.image-box{
+		// padding-right: 20rpx;
+		min-width: 216rpx;
+		min-height: 166rpx;
+		position: relative;
+		image{
+			width: 100%;
+			height: 100%;
+			border-radius: 8rpx;
+		}
+		.foodShade{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			line-height: 166rpx;
+			font-size: 28rpx;
+			text-align: center;
+			background: rgba(0,0,0,.4);
+			color: #FFFFFF;
+		}
+		.foodShade1{
+			line-height: 203rpx !important;
+		}
+		.foodShade2{
+			line-height: 263rpx !important;
+		}
+	}
+	.menu-info{
+		padding-left: 20rpx;
+		flex: 1;
+		.name{
+			font-size:26rpx;
+			height: 42rpx;
+			line-height: 42rpx;
+			color: #332F2E;
+			font-weight: 600;
+			max-width: 280rpx;
+			white-space: nowrap;
+			text-overflow:ellipsis; 
+			overflow:hidden; 
+		}
+		.sales-volume{
+			opacity: 0.6;
+			height: 30rpx;
+			line-height: 30rpx;
+			padding: 5rpx 0 12rpx 0;
+			font-size: 22rpx;
+			color: #332F2E;
+		}
+		.fooddetails{
+			opacity: 0.6;
+			font-size: 24rpx;
+			color: #332F2E;
+			text-align: justify;
+		}
+		.menu-price{
+			display: flex;
+			height: 44rpx;
+			line-height: 44rpx;
+			.price{
+				// font-size: 38rpx;
+				font-weight: 500;
+				color: #F63100;
+				line-height: 44rpx;
+				
+			}
+			.oldprice{
+				font-size: 20rpx;
+				color: #999;
+				text-decoration:line-through;
+				padding-left: 20rpx;
+			}
+			
+			
+			
+				
+			.property_btn {
+				border-radius: 24rpx;
+				padding: 0 20rpx !important;
+				width: unset;
+				box-sizing: border-box;
+				font-size: 24rpx;
+				height: 44rpx;
+				line-height: 44rpx;
+				background-image: linear-gradient(90deg, #FB5F00 0%, #F63100 100%);
+			}
+		}
+	}
+}
+//菜品按钮
+.loadfail-img{
+		 height: 100%;
+		 background: url('~@/static/image/defaultImg.png') no-repeat center;
+		 background-size: 50%;
+	}
+.addBox{
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+	.sub{
+		background-image: url('~@/static/image/orderImage/subicon.png');
+		background-size: 100% 100%;
+		padding: 1rpx;
+	}
+	.addicon{
+		background-image: url('~@/static/image/orderImage/addicon.png');
+		background-size: 100% 100%;
+	}
+	
+	button{
+		width: 44rpx;
+		height: 44rpx;
+		// font-size: 36rpx;
+		border-radius: 50%;
+		line-height: 44rpx;
+		text-align: center;
+		margin: 0;
+		background-color: #FFFFFF;
+		padding: 2rpx !important;
+		border: none;
+	}
+	.num{
+		font-size: 28rpx;
+		vertical-align: top;
+		padding: 0 8rpx;
+	}
+}
+
+.menu-loading{
+	background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNzUgNjAzIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yKSI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTIgNjloMzc1djUzNEgyeiIvPjxwYXRoIGZpbGw9IiNFRUUiIGQ9Ik0yIDBoMzc1djY5SDJ6Ii8+PHJlY3Qgd2lkdGg9IjY2IiBoZWlnaHQ9IjY2IiB4PSIxNTciIHk9IjIzIiBmaWxsPSIjRjZGNkY2IiByeD0iMiIvPjxwYXRoIGZpbGw9IiNFRUUiIGQ9Ik02NSA5OWgyNTB2MjRINjV6bTAgMzFoMjUwdjEzSDY1eiIvPjxwYXRoIGZpbGw9IiNGNkY2RjYiIGQ9Ik02NSAxNTBoMjUwdjEzSDY1ek0yIDMwMGg3N3YzMDNIMnoiLz48cGF0aCBzdHJva2U9IiNGNkY2RjYiIGQ9Ik0yNi41IDE3Mi41aDMyNnYyOGgtMzI2eiIvPjxwYXRoIGZpbGw9IiNFRUUiIGQ9Ik01MCAxODBoMjgwdjEzSDUweiIvPjxwYXRoIHN0cm9rZT0iI0Y2RjZGNiIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgZD0iTS41IDI0OC41aDM3OS4wMDUiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4OCAyNzgpIj48cGF0aCBmaWxsPSIjRUVFIiBkPSJNMjY3IDgydi0zLjk5OGEuOTk5Ljk5OSAwIDEgMC0yIDBWODJoLTMuOTk4YS45OTkuOTk5IDAgMSAwIDAgMkgyNjV2My45OThhLjk5OS45OTkgMCAxIDAgMiAwVjg0aDMuOTk4YS45OTkuOTk5IDAgMSAwIDAtMkgyNjd6bS0xIDEyYy02LjA3NSAwLTExLTQuOTI1LTExLTExczQuOTI1LTExIDExLTExIDExIDQuOTI1IDExIDExLTQuOTI1IDExLTExIDExeiIvPjxyZWN0IHdpZHRoPSI3NCIgaGVpZ2h0PSI3NCIgeD0iMSIgeT0iMTMiIGZpbGw9IiNGNkY2RjYiIHJ4PSIyIi8+PHBhdGggZmlsbD0iI0VFRSIgZD0iTTg3IDEzaDE0MHYxNkg4N3ptMCAyNWgxMjZ2MTFIODd6bTAgMzFoMzN2MThIODd6Ii8+PHBhdGggc3Ryb2tlPSIjRjZGNkY2IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBkPSJNLjQ3MyAxLjVoMjkzLjAzMiIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4OCAzOTMpIj48cGF0aCBmaWxsPSIjRUVFIiBkPSJNMjY3IDgydi0zLjk5OGEuOTk5Ljk5OSAwIDEgMC0yIDBWODJoLTMuOTk4YS45OTkuOTk5IDAgMSAwIDAgMkgyNjV2My45OThhLjk5OS45OTkgMCAxIDAgMiAwVjg0aDMuOTk4YS45OTkuOTk5IDAgMSAwIDAtMkgyNjd6bS0xIDEyYy02LjA3NSAwLTExLTQuOTI1LTExLTExczQuOTI1LTExIDExLTExIDExIDQuOTI1IDExIDExLTQuOTI1IDExLTExIDExeiIvPjxyZWN0IHdpZHRoPSI3NCIgaGVpZ2h0PSI3NCIgeD0iMSIgeT0iMTMiIGZpbGw9IiNGNkY2RjYiIHJ4PSIyIi8+PHBhdGggZmlsbD0iI0VFRSIgZD0iTTg3IDEzaDE0MHYxNkg4N3ptMCAyNWgxMjZ2MTFIODd6bTAgMzFoMzN2MThIODd6Ii8+PHBhdGggc3Ryb2tlPSIjRjZGNkY2IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBkPSJNLjQ3MyAxLjVoMjkzLjAzMiIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4OCA1MDkpIj48cGF0aCBmaWxsPSIjRUVFIiBkPSJNMjY3IDgydi0zLjk5OGEuOTk5Ljk5OSAwIDEgMC0yIDBWODJoLTMuOTk4YS45OTkuOTk5IDAgMSAwIDAgMkgyNjV2My45OThhLjk5OS45OTkgMCAxIDAgMiAwVjg0aDMuOTk4YS45OTkuOTk5IDAgMSAwIDAtMkgyNjd6bS0xIDEyYy02LjA3NSAwLTExLTQuOTI1LTExLTExczQuOTI1LTExIDExLTExIDExIDQuOTI1IDExIDExLTQuOTI1IDExLTExIDExeiIvPjxyZWN0IHdpZHRoPSI3NCIgaGVpZ2h0PSI3NCIgeD0iMSIgeT0iMTMiIGZpbGw9IiNGNkY2RjYiIHJ4PSIyIi8+PHBhdGggZmlsbD0iI0VFRSIgZD0iTTg3IDEzaDE0MHYxNkg4N3ptMCAyNWgxMjZ2MTFIODd6bTAgMzFoMzN2MThIODd6Ii8+PHBhdGggc3Ryb2tlPSIjRjZGNkY2IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBkPSJNLjQ3MyAxLjVoMjkzLjAzMiIvPjwvZz48cGF0aCBmaWxsPSIjRUVFIiBkPSJNNTAgMjIyaDI5djE2SDUwem0zOSAzNWgyOXYxNkg4OXpNOSAyNjdoNTB2MTVIOXptMCA1NGg1MHYxNUg5em0wIDQ5aDUwdjE1SDl6bTAgMTAxaDUwdjE1SDl6bTAtNDloNTB2MTVIOXptMCAxMDFoNTB2MTVIOXptMCA1MGg1MHYxNUg5em0xNjYtMzUxaDI5djE2aC0yOXptMTI2IDBoMjl2MTZoLTI5eiIvPjxwYXRoIGZpbGw9IiNGNUY1RjUiIGQ9Ik0yIDU1NmgzNzV2NDdIMnoiLz48L2c+PC9zdmc+") no-repeat;
+	background-size: 100% 100%;
+}
